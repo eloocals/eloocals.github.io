@@ -1,0 +1,209 @@
+@font-face {
+    font-family: "FredokaOne";
+    src: url("./src/fonts/Fredoka_One/FredokaOne.ttf");
+}
+
+:root {
+    --main: rgb(49,133,30);
+    --mainDarker: rgb(49,133,30);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "FredokaOne", Arial, Helvetica, sans-serif;
+}
+
+::selection {
+    background: var(--mainDarker);
+    color: white;
+}
+
+#logo{
+    display: block;
+    margin: auto;
+    width: 40vw;
+    transition: all 1s ease;
+
+    margin-top: 200px;
+}
+@media (max-width: 1023px) {
+    #logo{
+        width: 80vw;
+    }
+}
+
+#motto{
+    color: var(--main);
+    text-align: center;
+    margin: 3em;
+    font-size: 2em;
+    font-weight: 800;
+}
+main{
+    background-color:hsla(32,100%,82%,1);
+    background-image:
+    radial-gradient(at 80% 100%, hsla(45,100%,68%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(24,100%,81%,1) 0px, transparent 50%);
+    min-height: 100vh;
+    overflow: auto;
+}
+
+main{
+    position: relative;
+}
+form{
+    font-size: 0.8em;
+    margin: auto;
+    min-width: 50vw;
+    
+}
+
+#formTitle{
+    color: rgb(196, 107, 35);
+    font-size: 1.5em;
+    margin: 1em;
+}
+#lavoraForm{
+    text-align: center;
+    margin: 4em;
+    margin-bottom: 200px;
+
+}
+
+
+#lavoraForm input, #lavoraForm textarea{
+    width: 50vw;
+    font-size: 1.2em;
+    padding: 1.5em;
+    border-radius: 10px;
+    border: 0;
+    margin: 0.5em;
+    
+}
+
+#lavoraForm textarea{
+    border-top: 0;
+    height: 10em;
+}
+
+#lavoraForm button{
+    color: white;
+    width: 50vw;
+    padding: 1em;
+    font-size: 1.5em;
+    border: none;
+    background-color: var(--main);
+    transition: all 1s ease;
+    -webkit-border-radius: 80px;
+-webkit-border-top-left-radius: 40px;
+-webkit-border-bottom-right-radius: 40px;
+-moz-border-radius: 80px;
+-moz-border-radius-topleft: 40px;
+-moz-border-radius-bottomright: 40px;
+border-radius: 80px;
+border-top-left-radius: 40px;
+border-bottom-right-radius: 40px;
+}
+#lavoraForm button:hover{
+    background-color: var(--mainDarker);
+    transform: scale(1.01);
+}
+
+
+.custom-shape-divider-top-1678261548 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1678261548 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 156px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1678261548 .shape-fill {
+    fill: #31851E;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-top-1678261548 svg {
+        width: calc(116% + 1.3px);
+        height: 156px;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1678261548 svg {
+        width: calc(237% + 1.3px);
+        height: 105px;
+    }
+}
+
+
+.custom-shape-divider-bottom-1678261624 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1678261624 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 156px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1678261624 .shape-fill {
+    fill: #d68356;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-bottom-1678261624 svg {
+        width: calc(150% + 1.3px);
+        height: 65px;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1678261624 svg {
+        width: calc(237% + 1.3px);
+        height: 105px;
+    }
+}
+
+
+.shape{
+    z-index: 0;
+    height: 200px;
+    
+}
+
+
+.blob { 
+    width: 702.48974609375px;
+    height: 616.6009521484375px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width=%22702.49%22 height=%22616.601%22 viewBox=%22187.994 189.242 702.49 616.601%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M824.5 610Q720 720 610 759t-266.5 46.5Q187 813 188 656.5T231.5 387Q274 274 387 230t266.5-40.5Q807 193 868 346.5T824.5 610Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22%23444cf7%22 d=%22M824.5 610Q720 720 610 759t-266.5 46.5Q187 813 188 656.5T231.5 387Q274 274 387 230t266.5-40.5Q807 193 868 346.5T824.5 610Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  }
+  
